@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import styles from './Header.module.scss';
 
 import shield from '../../../public/assets/img/shield-icon.png';
@@ -9,8 +11,15 @@ import box from '../../../public/assets/img/box-icon.png';
 import heart from '../../../public/assets/img/heart-icon.png';
 import user from '../../../public/assets/img/user-icon.png';
 import cart from '../../../public/assets/img/cart-icon.png';
+import crown from '../../../public/assets/img/crown-icon.png';
 
 const Header: React.FC = () => {
+    const [activeIndex, setActiveIndex] = useState<number>(-1);
+
+    const handleButtonClick = (index: number) => {
+        setActiveIndex(index);
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.badges}>
@@ -47,7 +56,23 @@ const Header: React.FC = () => {
                 </div>
             </div>
 
-            <div className="nav"></div>
+            <ul className={styles.nav}>
+                {['Todas categorias', 'Supermercado', 'Livros', 'Moda', 'Lançamentos', 'Ofertas do dia', 'Assinatura'].map((item, index) => (
+                    <li key={index}>
+                        <button
+                            className={`${index === activeIndex ? styles.isActive : ''} ${item === 'Assinatura' ? styles.signatureBtn : ''}`}
+                            onClick={() => handleButtonClick(index)}
+                        >
+                            {item === 'Assinatura' ? (
+                                <>
+                                    <img src={crown} alt="Ícone de coroa para o botão de assinatura." />
+                                    {item}
+                                </>
+                            ) : item}
+                        </button>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }
