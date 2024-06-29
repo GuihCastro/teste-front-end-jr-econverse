@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.container {
+    width: 22.7rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    background: $pink-primary;
+    color: $white-1;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: filter .2s;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(.9);
+    }
+}

@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import styles from './Header.module.scss';
 
 import shield from '../../../public/assets/img/shield-icon.png';
@@ -13,8 +11,12 @@ import user from '../../../public/assets/img/user-icon.png';
 import cart from '../../../public/assets/img/cart-icon.png';
 import crown from '../../../public/assets/img/crown-icon.png';
 
-const Header: React.FC = () => {
-    const [activeIndex, setActiveIndex] = useState<number>(-1);
+interface HeaderProps {
+    activeIndex: number;
+    setActiveIndex: (index: number) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ activeIndex, setActiveIndex }) => {
 
     const handleButtonClick = (index: number) => {
         setActiveIndex(index);

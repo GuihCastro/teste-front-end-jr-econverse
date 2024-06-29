@@ -1,4 +1,4 @@
-$bg-primary: #fff;
+@import './variables';
 
 :root {
     font-size: 62.5%; // 1rem = 10px
@@ -14,7 +14,7 @@ $bg-primary: #fff;
 }
 
 body {
-    background: $bg-primary;
+    background: $white-1;
     width: 100%;
 }
 
