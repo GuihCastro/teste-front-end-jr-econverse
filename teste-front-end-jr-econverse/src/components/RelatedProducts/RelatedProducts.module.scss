@@ -1,0 +1,62 @@
+@import '../../styles/variables';
+
+.container {
+    @include flex-center-column;
+    min-width: 100%;
+    max-width: 192rem;
+    padding: 0 8.1rem;
+
+    .title {
+        position: relative;
+        width: 100%;
+        padding: 0 15.1rem;
+        display: flex;
+        justify-content: center;
+        hr {
+            width: 100%;
+            border-color: $gray-6;
+        }
+        h2 {
+            position: absolute;
+            top: -2.2rem;
+            color: $pink-primary;
+            background-color: $white-1;
+            font-size: 3rem;
+            font-weight: 700;
+            padding: 0 3.4rem;
+        }
+    }
+
+    .nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        position: center;
+        margin-top: 3.1rem;
+        padding: 0 8.1rem;
+        li {
+            @include flex-center;
+            width: 100%;
+            border: 1px solid $gray-7;
+            padding: 1rem 0;
+            button {
+                // width: 100%;
+                background: none;
+                border: none;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $gray-8;
+                text-transform: uppercase;
+                transition: brightness .2s;
+                &:hover {
+                    cursor: pointer;
+                    filter: brightness(1.5);
+                }
+            }
+            .isActive{
+                font-weight: 700;
+                color: $pink-primary;
+            }
+        }
+    }
+}
