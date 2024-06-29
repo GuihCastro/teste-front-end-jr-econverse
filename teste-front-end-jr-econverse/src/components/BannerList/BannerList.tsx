@@ -1,6 +1,6 @@
 import styles from './BannerList.module.scss';
 
-import BannerOfertas from '../BannerOfertas/BannerOfertas';
+import Banner from '../Banner/Banner';
 
 interface BannerProps {
     activeIndex: number;
@@ -8,12 +8,32 @@ interface BannerProps {
 
 const BannerList: React.FC<BannerProps> = ({ activeIndex }) => {
     const banners = [
-        "Banner para Todas categorias",
-        "Banner para Supermercado",
-        "Banner para Livros",
-        "Banner para Moda",
+        <Banner
+            title='Confira nossos produtos'
+            description=''
+            btnLabel='Ver produtos'
+        />,
+        <Banner
+            title='Confira nossos itens de Supermercado'
+            description='E compre sem sair de casa'
+            btnLabel='Ver supermercado'
+        />,
+        <Banner
+            title='Conheça nossa livraria'
+            description='Catálogo completo e variado'
+            btnLabel='Ver livros'
+        />,
+        <Banner
+            title=''
+            description='Catálogo completo e variado'
+            btnLabel='Ver livros'
+        />,
         "Banner para Lançamentos",
-        <BannerOfertas />,
+        <Banner
+            title='Venha conhecer nossas promoções'
+            description='50% Off nos produtos'
+            btnLabel='Ver produto'
+        />,
         "Banner para Assinatura"
     ];
 
