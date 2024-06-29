@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import styles from './RelatedProducts.module.scss';
 
+import CardList from '../CardList/CardList';
+
 const RelatedProducts: React.FC = () => {
     const [activeProductCategory, setActiveProductCategory] = useState<number>(0);
 
@@ -28,6 +30,8 @@ const RelatedProducts: React.FC = () => {
                     </li>
                 ))}
             </ul>
+
+            <CardList />
         </section>
     );
 }

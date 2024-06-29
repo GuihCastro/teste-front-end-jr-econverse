@@ -2,7 +2,7 @@
 
 .container {
     @include flex-center-column;
-    min-width: 100%;
+    width: 100%;
     max-width: 192rem;
     padding: 0 8.1rem;
 
