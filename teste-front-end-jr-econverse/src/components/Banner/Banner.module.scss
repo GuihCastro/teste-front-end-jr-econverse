@@ -1,7 +1,8 @@
 @import '../../styles/variables';
 
 .container {
-    width: 100%;
+    max-width: 100%;
+    max-width: 1920px;
     height: 39.5rem;
     display: flex;
     padding: 5.2rem 9.2rem;

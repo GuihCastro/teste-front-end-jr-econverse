@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 // import { fetchProducts } from './api/products';
 // import ProductCard from './components/ProductCard/ProductCard';
 // import ProductModal from './components/ProductModal/ProductModal';

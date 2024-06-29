@@ -24,18 +24,25 @@ const BannerList: React.FC<BannerProps> = ({ activeIndex }) => {
             btnLabel='Ver livros'
         />,
         <Banner
-            title=''
-            description='Catálogo completo e variado'
-            btnLabel='Ver livros'
+            title='Temos incríveis opções de moda'
+            description='Confira a coleção outrono-inverno'
+            btnLabel='Ver coleção'
         />,
-        "Banner para Lançamentos",
+        <Banner
+            title='Venha dar uma olhada nos nossos lançamentos'
+            description='E maiores novidades'
+            btnLabel='Ver lançamentos'
+        />,
         <Banner
             title='Venha conhecer nossas promoções'
             description='50% Off nos produtos'
             btnLabel='Ver produto'
         />,
-        "Banner para Assinatura"
-    ];
+        <Banner
+            title='Assine já o Vtex +'
+            description='E consiga incríveis benefícios nas suas compras'
+            btnLabel='Assinar!'
+        />];
 
     return (
         <div className={styles.container}>
