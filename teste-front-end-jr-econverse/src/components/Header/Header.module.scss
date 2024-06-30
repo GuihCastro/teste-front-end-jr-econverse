@@ -2,9 +2,10 @@
 
 .container {
     width: 100%;
-    max-width: 128rem;
+    max-width: 192rem;
     display: flex;
     flex-direction: column;
+    padding: 0 8.1rem;
 
     .badges {
         width: 100%;

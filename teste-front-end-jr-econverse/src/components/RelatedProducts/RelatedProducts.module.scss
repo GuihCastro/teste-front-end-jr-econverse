@@ -33,7 +33,7 @@
         grid-template-columns: repeat(6, 1fr);
         position: center;
         margin-top: 3.1rem;
-        padding: 0 8.1rem;
+        // padding: 0 8.1rem;
         li {
             @include flex-center;
             width: 100%;

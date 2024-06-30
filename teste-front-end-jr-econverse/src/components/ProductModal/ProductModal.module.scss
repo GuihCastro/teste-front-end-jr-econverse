@@ -1,5 +1,19 @@
 @import '../../styles/variables';
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    50% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .container {
     @include flex-center;
     position: fixed;
@@ -19,6 +33,7 @@
         background: $white-1;
         padding: 2.1rem 5.5rem;
         gap: 8.7rem;
+        animation: fadeIn .4s forwards;
 
         .closeBtn {
             position: absolute;
