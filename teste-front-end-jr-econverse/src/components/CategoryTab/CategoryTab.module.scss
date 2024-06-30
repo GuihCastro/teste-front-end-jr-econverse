@@ -28,6 +28,13 @@
 }
 
 .isActive {
+    button {
+        background: $white-1;
+        &:hover {
+            cursor: default;
+            filter: brightness(1);
+        }
+    }
     label {
         color: $pink-primary;
     }

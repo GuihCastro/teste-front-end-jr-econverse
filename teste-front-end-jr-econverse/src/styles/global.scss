@@ -16,6 +16,9 @@
 body {
     background: $white-1;
     width: 100%;
+    &.overflow-hidden {
+        overflow: hidden;
+    }    
 }
 
 // .product-gallery {

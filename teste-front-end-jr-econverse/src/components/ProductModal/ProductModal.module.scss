@@ -1,3 +1,133 @@
+@import '../../styles/variables';
+
+.container {
+    @include flex-center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+
+    .modalCard {
+        @include flex-center;
+        // justify-content: space-between;
+        // width: 77rem;
+        position: relative;
+        height: 30rem;
+        background: $white-1;
+        padding: 2.1rem 5.5rem;
+        gap: 8.7rem;
+
+        .closeBtn {
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            background: none;
+            border: none;
+            top: 1.6rem;
+            right: 3.1rem;
+
+            &:hover {
+                cursor: pointer;
+                filter: brightness(.9);
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1.5px;
+                height: 20px;
+                background-color: #707070;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        
+            &::before {
+                transform: translateX(-50%) rotate(45deg);
+            }
+        
+            &::after {
+                transform: translateX(-50%) rotate(-45deg);
+            }
+        }
+
+        .info {
+            @include flex-center-column;
+            align-items: flex-start;
+            h1 {
+                font-family: 'Lato', sans-serif;
+                font-size: 2rem;
+                font-weight: 400;
+                color: $blue-1;
+                margin-top: 1.9rem;
+                margin-bottom: 2.1rem;
+            }
+            h2 {
+                font-family: 'Lato', sans-serif;
+                font-size: 2rem;
+                font-weight: 800;
+                color: $blue-1;
+                margin-bottom: 1.8rem;
+            }
+            p {
+                font-family: 'Lato', sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+                color: $gray-10;
+                margin-bottom: 2.5rem;
+            }
+            a {
+                font-family: 'Lato', sans-serif;
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: $blue-1;
+                margin-bottom: 1.6rem;
+            }
+            .counter {
+                @include flex-center;
+                justify-content: space-between;
+                width: 11rem;
+                height: 3.6rem;
+                border: 1px solid $blue-1;
+                border-radius: 4px;
+                padding: .8rem .9rem;
+                margin-bottom: 1.6rem;
+
+                button {
+                    @include flex-center;
+                    height: 100%;
+                    background: none;
+                    border: none;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    img {
+                        width: 2.3rem;
+                    }
+                }
+                span {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $blue-1;
+                }
+            }
+            button {
+                width: 24.5rem;
+                height: 4.4rem;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+
 // .modal-overlay {
 //     position: fixed;
 //     top: 0;
