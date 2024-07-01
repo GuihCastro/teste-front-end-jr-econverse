@@ -76,8 +76,27 @@ Os arquivos de saída serão gerados na pasta `dist`.
 
 ## Boas práticas aplicadas
 
-- HTML semântico.
-- Boas práticas de SEO.
+### Boas práticas de React
+
+- **Componentização:** Divida a interface em componentes pequenos e reutilizáveis.
+- **Estado e Props:** Utilize `useState` e `useEffect` de forma eficiente e passe dados através de props.
+- **Hooks:** Aproveite os hooks para gerenciar estado e ciclo de vida.
+- **Chaves únicas:** Ao renderizar listas, use chaves únicas (`key`) para cada item.
+- **Proptypes:** Utilize TypeScript para tipagem de props e estados, melhorando a robustez do código.
+- **Estilos em módulos:** Use CSS Modules para evitar conflitos de nomes de classes.
+
+### Boas práticas de Sass
+
+- **Variáveis:** Utilize variáveis para cores, fontes e tamanhos.
+- **Aninhamento:** Evite aninhamentos profundos para manter a clareza.
+- **Partials:** Divida seu CSS em arquivos menores utilizando `@import`.
+- **Mixins:** Reutilize estilos com mixins para evitar repetição de código.
+- **Operadores:** Use operadores para cálculos de medidas e cores.
+
+### Boas práticas de HTML e SEO
+
+- **HTML semântico:** Utilize tags HTML de forma semântica (ex: `<header>`, `<main>`, `<footer>`).
+- **SEO:** Adicione meta tags apropriadas e utilize atributos `alt` em imagens.
 
 ## Contato
 
