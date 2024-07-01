@@ -3,6 +3,7 @@
 .container {
     @include flex-center-column;
     width: 100%;
+    max-width: 180rem;
     padding: 0;
 
     .partners, .productsSecondary {

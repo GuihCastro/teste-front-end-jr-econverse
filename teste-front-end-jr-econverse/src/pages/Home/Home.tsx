@@ -7,6 +7,7 @@ import CategoriesNav from "../../components/CategoriesNav/CategoriesNav";
 import RelatedProducts from '../../components/RelatedProducts/RelatedProducts';
 import PartnerCard from '../../components/PartnerCard/PartnerCard';
 import ProductCardSecondary from '../../components/ProductCardSecondary/ProductCardSecondary';
+import BrandsNav from '../../components/BrandsNav/BrandsNav';
 
 const Home: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number>(5);
@@ -48,6 +49,8 @@ const Home: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            <BrandsNav />
         </div>
     );
 };
