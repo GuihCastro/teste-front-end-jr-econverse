@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ activeIndex, setActiveIndex }) => {
     }
 
     return (
-        <div className={styles.container}>
+        <header className={styles.container}>
             <div className={styles.badges}>
                 <div className={styles.badge}>
                     <img src={shield} alt="Ícone de escudo indicando proteção." />
@@ -75,7 +75,7 @@ const Header: React.FC<HeaderProps> = ({ activeIndex, setActiveIndex }) => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </header>
     );
 }
 

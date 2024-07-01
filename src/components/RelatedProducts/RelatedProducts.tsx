@@ -12,7 +12,7 @@ const RelatedProducts: React.FC = () => {
     };
 
     return (
-        <section className={styles.container}>
+        <main className={styles.container}>
             <div className={styles.title}>
                 <hr />
                 <h2>Produtos relacionados</h2>
@@ -32,7 +32,7 @@ const RelatedProducts: React.FC = () => {
             </ul>
 
             <CardList />
-        </section>
+        </main>
     );
 }
 
