@@ -1,5 +1,5 @@
 import styles from './BrandsNav.module.scss';
-import arrow from '../../../assets/img/right-arrow-2.png';
+import arrow from '../../../public/assets/img/right-arrow-2.png';
 
 import BrandBadge from '../BrandBadge/BrandBadge';
 

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
 import styles from './CardList.module.scss';
-import prev from '../../../assets/img/prev-icon.png';
-import next from '../../../assets/img/next-icon.png';
+import prev from '../../../public/assets/img/prev-icon.png';
+import next from '../../../public/assets/img/next-icon.png';
 
 import { fetchProducts } from '../../api/products';
 

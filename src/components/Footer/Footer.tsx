@@ -1,20 +1,20 @@
 import styles from './Footer.module.scss';
 
-import facebook from '../../../assets/img/facebook-icon.png';
-import instagram from '../../../assets/img/instagram-icon.png';
-import youtube from '../../../assets/img/youtube-icon.png';
-import visa from '../../../assets/img/visa.png';
-import elo from '../../../assets/img/elo.png';
-import alelo from '../../../assets/img/alelo.png';
-import dinners from '../../../assets/img/dinners.png';
-import ifood from '../../../assets/img/ifood.png';
-import mastercard from '../../../assets/img/mastercard.png';
-import pix from '../../../assets/img/pix.png';
-import amex from '../../../assets/img/amex.png';
-import ticket from '../../../assets/img/ticket.png';
-import sodexo from '../../../assets/img/sodexo.png';
-import econverse from '../../../assets/img/econverse-logo.png';
-import vtexWhite from '../../../assets/img/vtex-logo-white.png';
+import facebook from '../../../public/assets/img/facebook-icon.png';
+import instagram from '../../../public/assets/img/instagram-icon.png';
+import youtube from '../../../public/assets/img/youtube-icon.png';
+import visa from '../../../public/assets/img/visa.png';
+import elo from '../../../public/assets/img/elo.png';
+import alelo from '../../../public/assets/img/alelo.png';
+import dinners from '../../../public/assets/img/dinners.png';
+import ifood from '../../../public/assets/img/ifood.png';
+import mastercard from '../../../public/assets/img/mastercard.png';
+import pix from '../../../public/assets/img/pix.png';
+import amex from '../../../public/assets/img/amex.png';
+import ticket from '../../../public/assets/img/ticket.png';
+import sodexo from '../../../public/assets/img/sodexo.png';
+import econverse from '../../../public/assets/img/econverse-logo.png';
+import vtexWhite from '../../../public/assets/img/vtex-logo-white.png';
 
 import FooterCard from '../FooterCard/FooterCard';
 

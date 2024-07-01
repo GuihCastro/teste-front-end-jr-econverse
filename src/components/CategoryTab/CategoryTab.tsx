@@ -11,7 +11,7 @@ const CategoryTab: React.FC<categoryTabProps> = ({ label, iconIndex, isActive, o
     return (
         <div className={`${styles.container} ${isActive ? styles.isActive : ''}`}>
             <button onClick={onClick}>
-                <img src={`../../../assets/img/tab-${iconIndex}.png`} alt="Ícone de categoria." />
+                <img src={`../../../public/assets/img/tab-${iconIndex}.png`} alt="Ícone de categoria." />
             </button>
             <label>{label}</label>
         </div>

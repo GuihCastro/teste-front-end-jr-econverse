@@ -3,8 +3,8 @@ import styles from './ProductModal.module.scss';
 import { useState, useEffect } from 'react';
 import Button from '../Button/Button';
 
-import plus from '../../../assets/img/plus-icon.png';
-import minus from '../../../assets/img/minus-icon.png';
+import plus from '../../../public/assets/img/plus-icon.png';
+import minus from '../../../public/assets/img/minus-icon.png';
 
 interface ProductModalProps {
     open: boolean,
