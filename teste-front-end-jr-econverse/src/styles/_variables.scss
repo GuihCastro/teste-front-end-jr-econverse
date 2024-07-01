@@ -9,10 +9,12 @@ $gray-7: #bdbdbd;
 $gray-8: #3b3b3b;
 $gray-9: #3f3f40;
 $gray-10: #222222;
+$gray-11: #2a2a2a;
+$gray-12: #c0c0c0;
 $pink-primary: #F71963;
 $blue-1: #041E50;
-$banner-bg: url('../../public/assets/img/banner.png');
-$card-bg: url('../../public/assets/img/card-bg.png');
+$banner-bg: url('../../assets/img/banner.png');
+$card-bg: url('../../assets/img/card-bg.png');
 
 @mixin flex-center {
     display: flex;

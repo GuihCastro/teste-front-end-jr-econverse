@@ -31,8 +31,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ name, short, photo, price }) 
                     </div>
                     <div className={styles.info}>
                         <div className={styles.price}>
-                            <h3>R$ {price}</h3>
-                            <h2>Ou 2x de R$ {(price / 2).toFixed(2)} sem juros</h2>
+                            <h3>R$ {price.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</h3>
+                            <h2>Ou 2x de R$ {(price / 2).toLocaleString('pt-BR', {minimumFractionDigits: 2})} sem juros</h2>
                         </div>
                         <span>Frete grátis</span>
                     </div>

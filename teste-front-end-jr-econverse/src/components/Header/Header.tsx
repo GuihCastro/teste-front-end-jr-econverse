@@ -1,15 +1,15 @@
 import styles from './Header.module.scss';
 
-import shield from '../../../public/assets/img/shield-icon.png';
-import truck from '../../../public/assets/img/truck-icon.png';
-import card from '../../../public/assets/img/card-icon.png';
-import logo from '../../../public/assets/img/vtex-logo.png';
-import magnifyingGlass from '../../../public/assets/img/magnifying-glass-icon.png';
-import box from '../../../public/assets/img/box-icon.png';
-import heart from '../../../public/assets/img/heart-icon.png';
-import user from '../../../public/assets/img/user-icon.png';
-import cart from '../../../public/assets/img/cart-icon.png';
-import crown from '../../../public/assets/img/crown-icon.png';
+import shield from '../../../assets/img/shield-icon.png';
+import truck from '../../../assets/img/truck-icon.png';
+import card from '../../../assets/img/card-icon.png';
+import logo from '../../../assets/img/vtex-logo.png';
+import magnifyingGlass from '../../../assets/img/magnifying-glass-icon.png';
+import box from '../../../assets/img/box-icon.png';
+import heart from '../../../assets/img/heart-icon.png';
+import user from '../../../assets/img/user-icon.png';
+import cart from '../../../assets/img/cart-icon.png';
+import crown from '../../../assets/img/crown-icon.png';
 
 interface HeaderProps {
     activeIndex: number;

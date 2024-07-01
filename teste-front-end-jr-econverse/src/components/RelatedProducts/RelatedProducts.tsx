@@ -22,7 +22,7 @@ const RelatedProducts: React.FC = () => {
                 {['Celular', 'Acessórios', 'Tablets', 'Notebooks', 'TVs', 'Ver todos'].map((item, index) => (
                     <li key={index}>
                         <button
-                            className={`${index === activeProductCategory ? styles.isActive : ''} ${item === 'Assinatura' ? styles.signatureBtn : ''}`}
+                            className={`${index === activeProductCategory ? styles.isActive : ''}`}
                             onClick={() => handleCategoryClick(index)}
                         >
                             {item}

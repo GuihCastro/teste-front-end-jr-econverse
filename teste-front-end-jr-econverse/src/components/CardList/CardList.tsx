@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 
 import styles from './CardList.module.scss';
+import prev from '../../../assets/img/prev-icon.png';
+import next from '../../../assets/img/next-icon.png';
 
 import { fetchProducts } from '../../api/products';
 
@@ -17,7 +19,7 @@ interface Product {
 const CardList: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]);
     const [startIndex, setStartIndex] = useState<number>(0);
-    
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -37,18 +39,24 @@ const CardList: React.FC = () => {
     }
 
     const handlePrev = () => {
-        if (startIndex -4 >= 0) setStartIndex(startIndex - 4);
+        if (startIndex - 4 >= 0) setStartIndex(startIndex - 4);
     }
 
     console.log(products);
     console.log(displayedProducts);
-    
+
 
     return (
         <ul className={styles.container}>
             {displayedProducts.map(product => (
                 <ProductCard key={product.id} name={product.productName} short={product.descriptionShort} price={product.price} photo={product.photo} />
             ))}
+        <button className={styles.prev} onClick={handlePrev}>
+            <img src={prev} alt="Ícone de seta para carregar os próximos itens." />
+        </button>
+        <button className={styles.next} onClick={handleNext}>
+            <img src={next} alt="Ícone de seta para carregar os itens anteriores." />
+        </button>
         </ul>
     );
 }

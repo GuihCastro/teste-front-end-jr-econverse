@@ -2,9 +2,26 @@
 
 .container {
     @include flex-center;
-    // justify-content: space-between;
+    position: relative;
+    justify-content: flex-start;
     width: 100%;
     // padding: 0 8.1rem;
-    gap: 6.2rem;
+    gap: 9rem;
     margin-top: 1.7rem;
+    .prev, .next {
+        position: absolute;
+        background: none;
+        border: none;
+        transition: filter .2s;
+        &:hover {
+            cursor: pointer;
+            filter: brightness(1.5);
+        }
+    }
+    .prev {
+        left: -6rem;
+    }
+    .next {
+        right: -6rem;
+    }
 }

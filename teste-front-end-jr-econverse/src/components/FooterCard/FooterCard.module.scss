@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.container {
+    @include flex-center-column;
+    justify-content: space-between;
+    width: 38rem;
+    height: 26rem;
+    padding: 4rem 3rem;
+    background: $white-1;
+    border-radius: 10px;
+    h2 {
+        color: $gray-9;
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        span {
+            font-size: 2.1rem;
+            font-weight: 700;
+        }
+    }
+    p {
+        color: $gray-9;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    .form {
+        @include flex-center;
+        height: 4.5rem;
+        gap: .9rem;
+        input {
+            width: 23rem;
+            height: 100%;
+            border: 1px solid $gray-11;
+            border-radius: 4px;
+            padding: 1.3rem 2.5rem;
+            &::placeholder {
+                color: $gray-12;
+                font-size: 1.2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+        button {
+            width: 6.2rem;
+            height: 100%;
+        }
+    }
+}

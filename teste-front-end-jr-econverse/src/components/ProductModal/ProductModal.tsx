@@ -3,8 +3,8 @@ import styles from './ProductModal.module.scss';
 import { useState, useEffect } from 'react';
 import Button from '../Button/Button';
 
-import plus from '../../../public/assets/img/plus-icon.png';
-import minus from '../../../public/assets/img/minus-icon.png';
+import plus from '../../../assets/img/plus-icon.png';
+import minus from '../../../assets/img/minus-icon.png';
 
 interface ProductModalProps {
     open: boolean,
@@ -55,7 +55,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ open, close, name, short, p
                 </div>
                 <div className={styles.info}>
                     <h1>{name}</h1>
-                    <h2>R$ {price}</h2>
+                    <h2>R$ {price.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</h2>
                     <p>{short}</p>
                     <a href="/">Veja mais detalhes do produto</a>
                     <div className={styles.counter}>

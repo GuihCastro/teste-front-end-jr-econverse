@@ -1,6 +1,6 @@
 import styles from './BrandBadge.module.scss';
 
-import logo from '../../../public/assets/img/vtex-logo.png';
+import logo from '../../../assets/img/vtex-logo.png';
 
 const BrandBadge: React.FC = () => {
     return (
